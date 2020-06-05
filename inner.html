@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <!-- <link href="https://assets.htmlacademy.ru/content/skills/1/css/outline.css" rel="stylesheet"> -->
+  </head>
+  <body>
+
+      <!-- Хедер -->
+
+    <header class="main-header">
+      <a class="logo" href="index.html"><img src="img/logo.svg" width="138" height="70" alt="Логотип Седоны"></a>
+      <nav class="main-nav">
+        <ul class="site-navigation">
+          <li class="site-navigation-item"><a class="nav-link" href="#">Информация</a></li>
+          <li class="site-navigation-item"><a class="nav-link" href="#">Фото и видео</a></li>
+          <li class="site-navigation-item"><a class="nav-link" href="#">Карта штата</a></li>
+          <li class="site-navigation-item"><a class="nav-link" href="">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+        <h1 class="visually-hidden"></h1>
+
+        <section class="filter">
+            <h2 class="visually-hidden">Фильтр отелей</h2>
+            <form action="https://echo.htmlacademy.ru" method="get">
+                <fieldset>
+                    <legend>Инфраструктура:</legend>
+                        <label for="pool">Бассейн</label>
+                        <input type="checkbox" name="pool" id="pool">
+
+                        <label for="parking">Парковка</label>
+                        <input type="checkbox" name="parking" id="parking">
+
+                        <label for="wifi">Wi-Fi</label>
+                        <input type="checkbox" name="wifi" id="wifi">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Тип жилья:</legend>
+                        <label for="hotel">Гостиница</label>
+                        <input type="checkbox" name="hotel" id="hotel">
+
+                        <label for="motel">Мотель</label>
+                        <input type="checkbox" name="motel" id="motel">
+
+                        <label for="apartments">Апартаменты</label>
+                        <input type="checkbox" name="apartments" id="apartments">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Стоимость в сутки (Р):</legend>
+                    <div class="range-cells">
+                        <input class="range-input-1" type="number" min="1000" max="10000" id="range-left-cell">
+                        <span class="fence">|</span>
+                        <input class="range-input-2" type="number" min="1000" max="10000" id="range-right-cell">
+                    </div>
+
+                    <div class="range-wrapper">
+                            <div class="range" id="range-box">
+                              <div class="range-between" id="range-ruler"></div>
+                              <button class="range-button-1" id="range-left-button"></button>
+                              <button class="range-button-2" id="range-right-button"></button>
+                            </div>
+                    </div>
+
+                    <button type="submit">Показать</button>
+                </fieldset>
+
+            </form>
+        </section>
+
+        <section class="hotels">
+            <h2 class="visually-hidden">Карточки отелей</h2>
+            <div class="results">Найдено: 3</div>
+
+            <div class="sort">
+                <h3>Сортировка:</h3>
+                <ul class="sort-list">
+                    <li class="sort-type">По цене</li>
+                    <li class="sort-type">По типу</li>
+                    <li class="sort-type">По рейтингу</li>
+                </ul>
+                <ul>
+                    <li class="sort-up">По возрастанию</li>
+                    <li class="sort-down">По убыванию</li>
+                </ul>
+            </div>
+
+            <div class="hotel-cards">
+                <ul class="hotel-list">
+
+                    <li class="hotel-item">
+                        <img src="img/hotel1.jpg">
+
+                        <div class="hotel-info">
+                            <h3 class="hotel-name">Amara Resort & Spa</h3>
+                            <span class="hotel-type">Гостиница</span>
+                            <span class="hotel-price">От 4000 Р.</span>
+                            <a href="#" class="button">Подробнее</a>
+                            <a href="#" class="button">Забронировать</a>
+                        </div>
+
+                        <div class="hotel-rate">
+                            <ul class="stars">
+                                <li class="star"><img src="img/star.png" width="19" height="17" alt="Звезда"></li>
+                                <li class="star"><img src="img/star.png" width="19" height="17" alt="Звезда"></li>
+                                <li class="star"><img src="img/star.png" width="19" height="17" alt="Звезда"></li>
+                                <li class="star"><img src="img/star.png" width="19" height="17" alt="Звезда"></li>
+                            </ul>
+                            <span class="rating">Рейтинг: 8,5</span>
+                        </div>
+                    </li>
+
+                    <li class="hotel-item">
+                        <img src="img/hotel2.jpg">
+
+                        <div class="hotel-info">
+                            <h3 class="hotel-name">Desert Quail Inn</h3>
+                            <span class="hotel-type">Мотель</span>
+                            <span class="hotel-price">От 3000 Р.</span>
+                            <a href="#" class="button">Подробнее</a>
+                            <a href="#" class="button">Забронировать</a>
+                        </div>
+
+                        <div class="hotel-rate">
+                            <ul class="stars">
+                                <li class="star"><img src="img/star.png" width="19" height="17" alt="Звезда"></li>
+                                <li class="star"><img src="img/star.png" width="19" height="17" alt="Звезда"></li>
+                                <li class="star"><img src="img/star.png" width="19" height="17" alt="Звезда"></li>
+                            </ul>
+                            <span class="rating">Рейтинг: 8,9</span>
+                        </div>
+                    </li>
+
+                    <li class="hotel-item">
+                        <img src="img/hotel3.jpg">
+
+                        <div class="hotel-info">
+                            <h3 class="hotel-name">Villas at Poco Diablo</h3>
+                            <span class="hotel-type">Апартаменты</span>
+                            <span class="hotel-price">От 2000 Р.</span>
+                            <a href="#" class="button">Подробнее</a>
+                            <a href="#" class="button">Забронировать</a>
+                        </div>
+
+                        <div class="hotel-rate">
+                            <ul class="stars">
+                                <li class="star"><img src="img/star.png" width="19" height="17" alt="Звезда"></li>
+                                <li class="star"><img src="img/star.png" width="19" height="17" alt="Звезда"></li>
+                            </ul>
+                            <span class="rating">Рейтинг: 9,2</span>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Футер -->
+
+    <footer class="main-footer">
+        <div class="contacts">
+            <span class="hashtag">#Visitsedona</span>
+            <a class="phone" href="tel:+74956660166">Тел: +7(495) 666-1-66</a>
+        </div>
+    
+        <div class="social">
+            <ul class="social-list">
+            <li class="social-item">Twitter</li>
+            <li class="social-item">Facebook</li>
+            <li class="social-item">Youtube</li>
+            </ul>
+        </div>
+    
+        <div class="copyright">
+            <span class="made-by">website by</span>
+            <a class="htmlacademy" href="#">html academy</a>
+        </div>
+        </footer>   
