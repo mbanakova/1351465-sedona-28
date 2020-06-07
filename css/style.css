@@ -95,6 +95,7 @@ body {
     margin: 0;
     line-height: 21px;
     text-align: center;
+    font-weight: 400;
     color: var(--dark-grey);
 }
 
@@ -120,12 +121,23 @@ body {
     font-size: 21px;
     font-weight: 700;
     text-align: center;
+}
 
+.advantage-number {
+    display: block;
+    color: var(--white);
+    font-weight: 400;
+    text-align: center;
+}
+
+.advantage-grey .advantage-number {
+    color: var(--dark-grey);
 }
 
 .advantage-text {
     margin: 0;
     text-align: center;
+    font-weight: 400;
 }
 
 .service-title {
@@ -139,6 +151,7 @@ body {
     margin: 0;
     color: var(--dark-grey);
     text-align: center;
+    font-weight: 400;
 }
 
 .advantage-grey .advantage-text {
@@ -650,6 +663,18 @@ body {
     background-image: url("../img/youtube.svg");
     background-repeat: no-repeat;
     background-position: center center;
+}
+
+.twitter:active {
+    background-image: url(../img/twitter-active.svg);
+}
+
+.facebook:active {
+    background-image: url(../img/facebook-active.svg);
+}
+
+.youtube:active {
+    background-image: url(../img/youtube-active.svg);
 }
 
 .made-by {
