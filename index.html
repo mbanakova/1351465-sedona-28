@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <!-- <link href="https://assets.htmlacademy.ru/content/skills/1/css/outline.css" rel="stylesheet"> -->
+    <!-- <link href="https://assets.htmlacademy.ru/content/skills/6/case-02/outline.css" rel="stylesheet">     -->
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page container">
 
-      <!-- Хедер -->
+      <!-- - Хедер - -->
 
     <header class="main-header">
       <a class="logo"><img src="img/logo.svg" width="138" height="70" alt="Логотип Седоны"></a>
@@ -23,14 +23,13 @@
       </nav>
     </header>
 
-    <main>
+    <main class="content">
 
       <!-- Промо-блок -->
 
       <section class="promo">
         <h1 class="visually-hidden">Седона</h1>
-        <img class="promo-background" src="img/promo.jpg" width="949" height="402" alt="Пейзаж Седоны">
-        <img class="promo-text" src="img/welcome.png" width="458" height="352" alt="Подпись блока">
+        <img class="promo-text" src="img/welcome.svg" width="458" height="352" alt="Подпись блока">
       </section>
 
       <!-- Преимущества -->
@@ -55,15 +54,15 @@
 
             <li class="feature-row">
               <ul class="service">
-                <li class="service-item">
+                <li class="service-item accomodation">
                   <h3 class="service-title">Жильё</h3>
                   <p class="service-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                 </li>
-                <li class="service-item">
+                <li class="service-item cuisine">
                   <h3 class="service-title">Еда</h3>
                   <p class="service-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
-                <li class="service-item">
+                <li class="service-item souvenirs">
                   <h3 class="service-title">Сувениры</h3>
                   <p class="service-text">Не только китайского, но и местного производства!</p>
                 </li>
@@ -109,35 +108,46 @@
 
       <section class="booking">
         <h2 class="booking-title">Заинтересовались?</h2>
-        <p class="booking-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p class="booking-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button class="booking-button">Поиск гостиницы в Седоне</button>
-      </section>
-
-    <!-- Форма -->
-
-      <section class="form">
-        <h2 class="visually-hidden">Форма бронирования</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <label class="form-label" for="arrival">Дата заезда:</label>
-          <input class="form-input" type="date" name="arrival" id="arrival">
-        
-          <label class="form-label" for="departure">Дата выезда:</label>
-          <input class="form-input" type="date" name="departure" id="departure">
-
-          <label class="form-label" for="adults">Взрослые:</label>
-          <input class="form-input" type="number" name="adults" id="adults" placeholder="2">
-
-          <label class="form-label" for="kids">Дети:</label>
-          <input class="form-input" type="number" name="kids" id="kids" placeholder="0">
-
-          <button class="form-button" type="submit">Найти</button>
-        </form>
       </section>
 
     <!-- Карта -->
 
       <section class="map">
         <h2 class="visually-hidden">Где мы находимся</h2>
+
+            <!-- Форма -->
+
+      <section class="form">
+        <h2 class="visually-hidden">Форма бронирования</h2>
+        <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
+
+          <div class="form-wrapper">
+
+            <div class="arrival-wrapper">
+            <label class="form-label" for="arrival">Дата заезда:</label>
+            <input class="form-input date" type="text" name="arrival" id="arrival" placeholder="24 апреля 2017">
+            </div>
+          
+            <div class="departure-wrapper">
+            <label class="form-label" for="departure">Дата выезда:</label>
+            <input class="form-input date" type="text" name="departure" id="departure" placeholder="4 июля 2017">
+            </div>
+
+            <div class="tourists-wrapper">
+            <label class="form-label" for="adults">Взрослые:</label>
+            <input class="form-input" type="number" name="adults" id="adults" placeholder="2">
+
+            <label class="form-label" for="kids">Дети:</label>
+            <input class="form-input" type="number" name="kids" id="kids" placeholder="0">
+            </div>
+            
+            <button class="form-button" type="submit">Найти</button>
+          </div>
+        </form>
+      </section>
+
         <img src="img/map.png" width="1199" height="594" alt="Карта места">
       </section>
     </main>
