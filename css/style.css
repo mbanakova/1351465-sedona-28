@@ -44,6 +44,11 @@ body {
     box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
+.catalog-container {
+    width: 1055px;
+    margin: 0 72px;
+}
+
 .visually-hidden {
     position: absolute;
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -55,7 +60,7 @@ body {
     overflow: hidden;
 }
 
-.page {
+.main-page {
     display: grid;
     grid-template-rows:
     auto
@@ -85,7 +90,6 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    /* Временно для сетки */
     min-height: 120px;
     width: 100%;
 }
@@ -149,6 +153,7 @@ body {
     width: 1200px;
     height: 509px;
     background-image: url("../img/promo.jpg");
+    background-color: var(-);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -368,11 +373,6 @@ body {
 .booking-button:active {
     background-color: var(--brand-brown-active);
     color: var(--white-on-click);
-    outline: none;
-}
-
-.booking-button:focus {
-    outline: none;
 }
 
 /* Форма */
@@ -492,10 +492,6 @@ body {
     color: var(--white-on-click);
 }
 
-.form-button:focus {
-    outline: none;
-}
-
 /* Карта */
 
 .map {
@@ -510,6 +506,13 @@ body {
     background-color: var(--brand-blue);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.catalog-form {
+    margin: 0 70px;
+    padding: 25px 0 31px;
+    display: flex;
+    justify-content: space-between
 }
 
 .filter-fieldset {
