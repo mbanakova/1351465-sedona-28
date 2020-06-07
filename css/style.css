@@ -26,7 +26,6 @@ body {
     margin: 0 auto;
     padding: 0;
     width: 1280px;
-    min-height: 2762px;
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     line-height: 21px;
@@ -60,38 +59,22 @@ body {
     overflow: hidden;
 }
 
-.main-page {
-    display: grid;
-    grid-template-rows:
-    auto
-    1fr
-    auto;
-  grid-template-areas:
-    "header"
-    "content"
-    "footer";
-  min-height: 100vh;
-}
-
 .main-header {
-    grid-area: header;
     position: relative;
-    /* Временно для сетки */
     min-height: 56px;
     background-color: var(--white);
 }
-
-.page-content {
-    grid-area: content;
-}
   
 .main-footer {
-    grid-area: footer;
     position: absolute;
     bottom: 0;
     left: 0;
     min-height: 120px;
     width: 100%;
+}
+
+.inner-footer {
+    position: relative;
 }
 
 /* Хедер */
@@ -890,9 +873,7 @@ body {
 }
 
 .social-link {
-    /* временно */
     margin: 3px;
-
     display: block;
     font-size: 0;
     width: 46px;
