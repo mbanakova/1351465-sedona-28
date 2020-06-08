@@ -484,6 +484,14 @@ body {
 
 /* ----------------------------Вторая страница---------------------------------- */
 
+.hotels {
+    background-color: var(--white);
+}
+
+.underline {
+    border-bottom: 1px solid var(--input-border-focus);
+}
+
 .filter {
     background-image: url(../img/filter.jpg);
     background-color: var(--brand-blue);
@@ -495,13 +503,21 @@ body {
     margin: 0 70px;
     padding: 25px 0 31px;
     display: flex;
-    justify-content: space-between
 }
 
 .filter-fieldset {
+    margin-right: 148px;
     padding: 0;
     border: none;
     color: var(--white);
+}
+
+.filter-fieldset:last-child {
+    margin: 0 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .legend-title {
@@ -518,6 +534,7 @@ body {
 }
 
 .filter-item {
+    margin-top: 23px;
     font-weight: 400;
 }
 
@@ -592,6 +609,8 @@ body {
 
 .range-cells {
     border: 2px solid var(--white);
+    height: 36px;
+    min-width: 317px;
 }
 
 .range-input-1,
@@ -650,6 +669,8 @@ body {
     text-transform: uppercase;
     font-size: 14px;
     line-height: 21px;
+    height: 36px;
+    min-width: 137px;
 }
 
 .filter-submit:hover {
@@ -659,15 +680,28 @@ body {
 
 /* Отели */
 
+.sort-wrap {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+}
+
 .results {
     margin: 0;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
+    min-width: 163px;
+}
+
+.sort {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
 }
 
 .sort-title {
-    margin: 0;
+    margin: 0 40px 0 0;
     font-size: 12px;
     line-height: 18px;
 }
@@ -677,10 +711,28 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
 }
 
+.sort-list-arrows {
+    position: relative;
+    margin-left: auto;
+    width: 40px;
+}
+
+.sort-list-arrows .sort-item:first-child {
+    position: absolute;
+    left: 0;
+    bottom: 7px;
+}
+.sort-list-arrows .sort-item:last-child {
+    position: absolute;
+    left: 25px;
+    top: 0;
+}
 .sort-list-string .sort-item {
     border-bottom: 1px dotted var(--brand-blue);
+    margin-right: 32px;
 }
 
 .sort-list-string .sort-item:active {
@@ -695,7 +747,6 @@ body {
     opacity: 1;
     color: var(--brand-blue);
 }
-
 
 .sort-by {
     text-decoration: none;
@@ -769,6 +820,10 @@ body {
     list-style: none;
 }
 
+.hotel-item {
+    display: flex;
+}
+
 .hotel-name {
     margin: 0;
     font-size: 21px;
@@ -827,6 +882,7 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
 }
 
 .rating {
