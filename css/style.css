@@ -506,7 +506,7 @@ body {
 }
 
 .filter-fieldset {
-    margin-right: 148px;
+    margin-right: 118px;
     padding: 0;
     border: none;
     color: var(--white);
@@ -517,7 +517,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
 }
 
 .legend-title {
@@ -608,14 +607,15 @@ body {
 }
 
 .range-cells {
+    margin-top: 11px;
     border: 2px solid var(--white);
-    height: 36px;
-    min-width: 317px;
 }
 
 .range-input-1,
 .range-input-2 {
     padding: 0;
+    width: 156px;
+    height: 36px;
     background-color: transparent;
     border: none;
     color: var(--white);
@@ -635,11 +635,40 @@ body {
     text-align: center;
 }
 
+.fence {
+    font-size: 26px;
+    line-height: 26px;
+}
+
+.range-wrapper {
+
+}
+
+.range {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    width: 316px;
+    height: 2px;
+    background-color: var(--range-button-grey);
+}
+
+.range-between {
+    margin: 20px auto 0;
+    width: 316px;
+    height: 2px;
+    background-color: var(--white);
+}
+
 .range-button-1,
 .range-button-2 {
     padding: 0;
+    position: absolute;
+    top: 0;
     width: 4px;
     height: 4px;
+    cursor: move;
+    transform: translateY(-50%);
     background-color: var(--range-button-grey);
     border: 7px solid var(--white);
     box-sizing: content-box;
@@ -647,7 +676,7 @@ body {
     box-shadow: 0 2px var(--range-button-grey);
 }
 
-.range-button-1:hover,
+/* .range-button-1:hover,
 .range-button-2:hover {
     padding: 0;
     width: 5px;
@@ -657,9 +686,10 @@ body {
     box-sizing: content-box;
     border-radius: 50%;
     box-shadow: 0 3px var(--range-button-grey);
-}
+} */
 
 .filter-submit {
+    margin: 23px auto 0;
     padding: 0;
     background-color: transparent;
     border: 2px solid var(--white);
