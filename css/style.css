@@ -39,13 +39,16 @@ body {
 .container {
     width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
-    box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+    padding: 0;
 }
 
 .catalog-container {
     width: 1055px;
     margin: 0 72px;
+}
+
+.shadow {
+    box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 .visually-hidden {
@@ -115,7 +118,8 @@ body {
 }
 
 .nav-link:hover {
-    color: var(--brand-blue)
+    color: var(--brand-blue);
+    transition: color 0.2s ease-in-out;
 }
 
 .nav-link:active {
@@ -351,6 +355,7 @@ body {
 
 .booking-button:hover {
     background-color: var(--brand-brown-hover);
+    transition: 0.2s ease-in-out;
 }
 
 .booking-button:active {
@@ -443,6 +448,7 @@ body {
 .form-input:hover {
     background-color: var(--input-grey-hover);
     border: 2px solid var(--input-grey-hover);
+    transition: 0.2s ease-in-out;
 }
 
 .form-input:focus {
@@ -468,6 +474,7 @@ body {
 
 .form-button:hover {
     background-color: var(--brand-blue-hover);
+    transition: 0.2s ease-in-out;
 }
 
 .form-button:active {
@@ -587,11 +594,13 @@ body {
 
 .filter-label:hover::before {
     border-color: var(--white);
+    transition: 0.2s ease-in-out;
 }
   
 .filter-label:hover::after {
     border-left-color: var(--white);
     border-bottom-color: var(--white);
+    transition: 0.2s ease-in-out;
 }
 
 /* Чекбокс, заблокирован */
@@ -640,10 +649,6 @@ body {
     line-height: 26px;
 }
 
-.range-wrapper {
-
-}
-
 .range {
     position: relative;
     margin-right: auto;
@@ -676,18 +681,6 @@ body {
     box-shadow: 0 2px var(--range-button-grey);
 }
 
-/* .range-button-1:hover,
-.range-button-2:hover {
-    padding: 0;
-    width: 5px;
-    height: 5px;
-    background-color: var(--range-button-grey);
-    border: 8px solid var(--white);
-    box-sizing: content-box;
-    border-radius: 50%;
-    box-shadow: 0 3px var(--range-button-grey);
-} */
-
 .filter-submit {
     margin: 23px auto 0;
     padding: 0;
@@ -706,6 +699,7 @@ body {
 .filter-submit:hover {
     background-color: var(--white);
     color: var(--black);
+    transition: 0.3s ease-in-out;
 }
 
 /* Отели */
@@ -791,6 +785,7 @@ body {
 .sort-by:hover {
     color: var(--brand-blue);
     opacity: 1;
+    transition: 0.2s ease-in-out;
 }
 
 .sort-by:active {
@@ -825,6 +820,7 @@ body {
 .sort-up:hover,
 .sort-down:hover {
     opacity: 1;
+    transition: 0.2s ease-in-out;
 }
 
 .sort-up:active {
@@ -880,6 +876,8 @@ body {
 
 .hotel-name:hover {
     color: var(--brand-blue);
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .hotel-name:active {
@@ -915,6 +913,7 @@ body {
 
 .more-info:hover {
     background-color: var(--brand-blue-hover);
+    transition: 0.2s ease-in-out;
 }
 
 .more-info:active {
@@ -935,6 +934,7 @@ body {
 
 .book:hover {
     background-color: var(--brand-brown-hover);
+    transition: 0.2s ease-in-out;
 }
 
 .book:active {
@@ -1013,6 +1013,7 @@ body {
 
 .social-link:hover {
     background-color: var(--brand-blue-hover);
+    transition: 0.3s ease-in-out;
 }
 
 .social-link:active {
@@ -1074,6 +1075,7 @@ body {
 
 .htmlacademy:hover {
     background-image: url("../img/logo-htmlacademy-blue.svg");
+    transition: 0.3s ease-in-out;
 }
 
 .htmlacademy:active {
