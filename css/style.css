@@ -930,7 +930,10 @@ body {
     color: var(--rating-grey);
     background-color: var(--input-grey);
     text-align: center;
+    line-height: 27px;
     font-weight: 400;
+    height: 27px;
+    min-width: 110px;
 }
 
 /* ----------------------------Вторая страница---------------------------------- */
