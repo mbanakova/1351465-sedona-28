@@ -821,14 +821,30 @@ body {
 }
 
 .hotel-item {
+    margin: 30px 72px;
     display: flex;
+    justify-content: space-between;
+    align-items: space-between;
 }
 
+.hotel-info {
+    margin-left: 30px;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 300px;
+}
 .hotel-name {
     margin: 0;
     font-size: 21px;
-    line-height: 26px;
+    line-height: 21px;
     font-weight: 700;
+}
+
+.name-wrap {
+    display: flex;
+    justify-content: space-between;
 }
 
 .hotel-name:hover {
@@ -846,8 +862,21 @@ body {
     font-weight: 400;
 }
 
+.hotel-price {
+    margin-right: 117px;
+}
+
+.buttons-wrap {
+    display: flex;
+}
+
 .more-info {
+    margin-right: 6px;
+    height: 27px;
+    min-width: 110px;
     font-weight: 700;
+    text-align: center;
+    line-height: 27px;
     color: var(--white);
     text-decoration: none;
     background-color: var(--brand-blue);
@@ -863,7 +892,11 @@ body {
 }
 
 .book {
+    height: 27px;
+    min-width: 142px;
     font-weight: 700;
+    text-align: center;
+    line-height: 27px;
     color: var(--white);
     text-decoration: none;
     background-color: var(--brand-brown); 
@@ -876,6 +909,13 @@ body {
 .book:active {
     background-color: var(--brand-brown-active);
     color: var(--white-on-click);
+}
+
+.hotel-rate {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .stars {
