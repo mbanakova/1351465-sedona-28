@@ -442,6 +442,7 @@ body {
     border: 2px solid var(--input-grey);
     flex-grow: 1;
     border-image: none;
+    box-sizing: border-box;
 }
 
 .form-input[placeholder] {
@@ -474,11 +475,12 @@ body {
     max-width: 114px;
 }
 
-.form-input.adults,
-.form-input.kids {
+.adults,
+.kids {
     text-align: center;
     flex-grow: 0;
     width: 38px;
+    height: 38px;
     padding-left: 0;
 }
 
@@ -486,6 +488,7 @@ body {
 .kids-count {
     display: flex;
     align-items: center;
+    border: 2px solid var(--input-grey);
 }
 
 .adults-minus,
@@ -493,8 +496,9 @@ body {
 .kids-minus,
 .kids-plus {
     position: relative;
-    width: 42px;
-    height: 42px;
+    padding: 0;
+    width: 38px;
+    height: 38px;
     border: none;
     background-color: var(--input-grey);
     border: 2px solid var(--input-grey);
@@ -506,8 +510,8 @@ body {
 .kids-plus::before {
     position: absolute;
     content: "";
-    top: 17px;
-    left: 14px;
+    top: 15px;
+    left: 12px;
     width: 13px;
     height: 3px;
     background-color: var(--range-button-grey);
@@ -517,8 +521,8 @@ body {
 .kids-plus::after {
     position: absolute;
     content: "";
-    top: 12px;
-    left: 19px;
+    top: 10px;
+    left: 17px;
     height: 13px;
     width: 3px;
     background-color: var(--range-button-grey);
@@ -548,13 +552,17 @@ body {
     padding-left: 53px;
 }
 
-.form-input:hover {
+.form-input.date:hover,
+.adults-count:hover,
+.kids-count:hover {
     background-color: var(--input-grey-hover);
     border: 2px solid var(--input-grey-hover);
     transition: 0.2s ease-in-out;
 }
 
-.form-input:focus {
+.form-input.date:focus,
+.adults-count:active,
+.kids-count:active {
     background-color: var(--white);
     border: 2px solid var(--input-border-focus);
     outline: none;
