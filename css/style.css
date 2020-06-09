@@ -524,22 +524,24 @@ body {
     background-color: var(--range-button-grey);
 }
 
-.adults-count:hover .adults-minus::before,
-.adults-count:hover .adults-plus::before,
-.adults-count:hover .adults-plus::after,
-.kids-count:hover .kids-minus::before,
-.kids-count:hover .kids-plus::before,
-.kids-count:hover .kids-plus::after {
+.adults-minus:hover::before,
+.adults-plus:hover::before,
+.adults-plus:hover::after,
+.kids-minus:hover::before,
+.kids-plus:hover::before,
+.kids-plus:hover::after {
     background-color: var(--black);
+    transition: 0.2s ease-in-out;
 }
 
-.adults-count:active .adults-minus::before,
-.adults-count:active .adults-plus::before,
-.adults-count:active .adults-plus::after,
-.kids-count:active .kids-minus::before,
-.kids-count:active .kids-plus::before,
-.kids-count:active .kids-plus::after {
+.adults-minus:active::before,
+.adults-plus:active::before,
+.adults-plus:active::after,
+.kids-minus:active::before,
+.kids-plus:active::before,
+.kids-plus:active::after {
     background-color: var(--brand-blue);
+    transition: 0.1s;
 }
 
 .tourists-wrapper .form-label:last-child {
