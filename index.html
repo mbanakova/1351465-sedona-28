@@ -137,10 +137,20 @@
 
             <div class="tourists-wrapper">
             <label class="form-label" for="adults">Взрослые:</label>
-            <input class="form-input" type="number" name="adults" id="adults" placeholder="2">
+
+            <div class="adults-count">            
+              <button class="adults-minus" aria-label="minus"></button>
+              <input class="form-input adults" type="text" name="adults" id="adults" placeholder="2">
+              <button class="adults-plus" aria-label="plus"></button>
+            </div>
 
             <label class="form-label" for="kids">Дети:</label>
-            <input class="form-input" type="number" name="kids" id="kids" placeholder="0">
+
+            <div class="kids-count">
+              <button class="kids-minus" aria-label="minus"></button>
+              <input class="form-input kids" type="text" name="kids" id="kids" placeholder="0">
+              <button class="kids-plus" aria-label="plus"></button>
+            </div>
             </div>
             
             <button class="form-button" type="submit">Найти</button>

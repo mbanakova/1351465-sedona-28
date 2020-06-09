@@ -441,18 +441,29 @@ body {
     line-height: 26px;
     border: 2px solid var(--input-grey);
     flex-grow: 1;
+    border-image: none;
 }
 
 .form-input[placeholder] {
     padding-left: 13px;
-    font-size: 14px;
+    font-size: 30x;
     font-weight: 700;
     color: var(--black);
     text-transform: uppercase;
 }
 
-.form-input {
-    border-image: none;
+.form-input.date {
+    background-image: url("../img/calendar-grey.svg");
+    background-repeat: no-repeat;
+    background-position: 97% 50%;
+}
+
+.form-input.date:hover {
+    background-image: url("../img/calendar.svg");
+}
+
+.form-input.date:focus {
+    background-image: url("../img/calendar-blue.svg");
 }
 
 .tourists-wrapper .form-label {
@@ -461,6 +472,74 @@ body {
 
 .tourists-wrapper .form-input {
     max-width: 114px;
+}
+
+.form-input.adults,
+.form-input.kids {
+    text-align: center;
+    flex-grow: 0;
+    width: 38px;
+    padding-left: 0;
+}
+
+.adults-count,
+.kids-count {
+    display: flex;
+    align-items: center;
+}
+
+.adults-minus,
+.adults-plus,
+.kids-minus,
+.kids-plus {
+    position: relative;
+    width: 42px;
+    height: 42px;
+    border: none;
+    background-color: var(--input-grey);
+    border: 2px solid var(--input-grey);
+}
+
+.adults-minus::before,
+.kids-minus::before,
+.adults-plus::before,
+.kids-plus::before {
+    position: absolute;
+    content: "";
+    top: 17px;
+    left: 14px;
+    width: 13px;
+    height: 3px;
+    background-color: var(--range-button-grey);
+}
+
+.adults-plus::after,
+.kids-plus::after {
+    position: absolute;
+    content: "";
+    top: 12px;
+    left: 19px;
+    height: 13px;
+    width: 3px;
+    background-color: var(--range-button-grey);
+}
+
+.adults-count:hover .adults-minus::before,
+.adults-count:hover .adults-plus::before,
+.adults-count:hover .adults-plus::after,
+.kids-count:hover .kids-minus::before,
+.kids-count:hover .kids-plus::before,
+.kids-count:hover .kids-plus::after {
+    background-color: var(--black);
+}
+
+.adults-count:active .adults-minus::before,
+.adults-count:active .adults-plus::before,
+.adults-count:active .adults-plus::after,
+.kids-count:active .kids-minus::before,
+.kids-count:active .kids-plus::before,
+.kids-count:active .kids-plus::after {
+    background-color: var(--brand-blue);
 }
 
 .tourists-wrapper .form-label:last-child {
