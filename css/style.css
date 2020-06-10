@@ -395,6 +395,8 @@ body {
     margin: 0 auto;
     background-color: var(--white);
     box-sizing: border-box;
+    transform: translateY(0%);
+    transition: 1s;
 }
 
 .hide {
