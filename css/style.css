@@ -568,6 +568,15 @@ body {
     outline: none;
 }
 
+.adults-minus[disabled]:hover::before,
+.adults-plus[disabled]:hover::before,
+.adults-plus[disabled]:hover::after,
+.kids-minus[disabled]:hover::before,
+.kids-plus[disabled]:hover::before,
+.kids-plus[disabled]:hover::after {
+    background-color: var(--range-button-grey);
+}
+
 .form-button {
     margin: 54px 0 55px;
     padding: 16px 50px;
